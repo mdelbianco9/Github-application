@@ -1,3 +1,6 @@
+// import Vue from 'vue'
+// import Router from 'vue-router'
+
 // This is where the routes are handles or passed through. AKA this is the router page
 export default [
 
