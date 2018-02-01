@@ -2,6 +2,21 @@ import Vue from 'vue';
 
 Vue.config.debug = process.env.NODE_ENV != 'production';
 
+import Axios from 'axios';
+
+
+Axios.defaults.baseURL = process.env.API_LOCATION;
+Axios.defaults.headers.common.Accept = 'application/vnd.github.v3+json';
+
+Vue.prototype.$http = Axios;
+Object.defineProperty(Vue.prototype, '$http', {
+
+	get() {
+		return Axios;
+	}
+
+});
+
 // Imports Vue router
 import VueRouter from 'vue-router';
 
