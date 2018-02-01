@@ -7,5 +7,5 @@ import App from './App.vue';
 import './bootstrap.js';
 
 
-// binds a Vue instance to our HTML
+// binds a Vue instance to our HTML...this is how we export EVERYTHING to out index
 new Vue(App).$mount('#app');

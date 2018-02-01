@@ -5,6 +5,7 @@ Vue.config.debug = process.env.NODE_ENV != 'production';
 // Imports Vue router
 import VueRouter from 'vue-router';
 
+// Imports the index.js routes array
 import routes from './routes';
 
 // Tells vue to use the router
