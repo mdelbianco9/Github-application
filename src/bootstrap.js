@@ -37,3 +37,15 @@ import './assets/sass/app.scss';
 export default {
 	router,
 };
+
+
+import VueMaterial from 'vue-material';
+
+Vue.use(VueMaterial);
+
+
+
+
+
+
+
