@@ -43,6 +43,11 @@ import VueMaterial from 'vue-material';
 
 Vue.use(VueMaterial);
 
+// Vue.material.registerTheme('default', {
+// 	primary: 'deeppink',
+// 	accent: 'blue',
+// });
+
 
 
 

@@ -1,8 +1,22 @@
 <template>
   <div>
-    <pre> {{ user }}</pre>
 
-   <router-view></router-view>
+    <!-- Tool Bar -->
+    <md-toolbar class="md-medium">
+      <md-button class="md-button-icon">
+        <md-icon>menu</md-icon>
+      </md-button>
+
+      <h2 class="md-title">GitHub</h2>
+
+      <md-input-container style="flex: 1">
+        <md-input placeholder="Search Username"></md-input>
+      </md-input-container>
+    </md-toolbar>
+
+    <md-layout>
+        <router-view></router-view>
+    </md-layout>
    
   </div>
 </template>
