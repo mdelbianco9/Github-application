@@ -9,11 +9,21 @@
 
       <h2 class="md-title">GitHub</h2>
 
-      <md-input-container style="flex: 1">
-        <md-input placeholder="Search Username"></md-input>
-      </md-input-container>
+      <md-field style="flex: 1">
+        <md-input class="myinput" placeholder="Search Username"></md-input>
+      </md-field>
     </md-toolbar>
 
+    <md-sidenav ref="sidenav" class="md-left">
+      <md-toolbar class="md-medium">
+        <md-button class="md-icon-button" @click.native="toggleSidenav">
+          <md-icon>menu</md-icon>
+          <h2 class="md-title">GitHub</h2>
+        </md-button>
+      </md-toolbar>
+    </md-sidenav>
+
+    <div class="main-content"></div>
     <md-layout>
         <router-view></router-view>
     </md-layout>
@@ -48,7 +58,11 @@ export default {
       // res is from the axios JSON
       this.user = res.data
       })
-    }
+    },
+
+    toggleSidenav() {
+      this.$refs.sidenav.toggle();
+    },
 
   },
 
